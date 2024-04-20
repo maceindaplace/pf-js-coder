@@ -4,10 +4,10 @@
 Martin Andres d'Huicque
 
 ## Nombre del Proyecto:
-Conversor de Monedas
+TRAVEL CONVERSOR - Conversor de Monedas para viajes
 
 ## Fecha entrega
-[20-04-204]
+[20-04-2024]
 
 ## Datos de Acceso 
 
