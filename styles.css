@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto; /* Centra el contenedor en la pantalla */
+    padding-top: 80px; /* Ajusta según la altura de tu navbar */
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido se organice en columna */
+    justify-content: space-between; /* Distribuye el espacio desde arriba hasta abajo */
+    min-height: 100vh; /* Opcional: Hace que el body tenga al menos la altura de la pantalla */
+}
+
+
+.navbar{
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+
+
+h1 {
+    color: #fff;
+    font-size: 30px !important;
+}
+
+
+.caja-locacion{
+    border: 1px solid #bfbfbf;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+.caja-conversor {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+.footer-conversor{
+
+background-color: #fafafa;
+padding: 20px;
+}
+
+.footer-titulos{
+font-size: 16px;
+font-weight: bold;
+color: #000;
+}
+
+.footer-derechos{
+background-color: #007bff;
+padding: 20px;
+color: #fff;
+font-size: 14px;
+
+}
+
+
+
+#converter-container, #location-inputs {
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.input-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #007bff;
+
+}
+
+input, select, button {
+    margin-top: 10px;
+    width: 100%;
+    padding:10px;
+    border:1px solid #000;
+    margin-bottom: 10px;
+    border-radius: 10px !important;
+}
+
+#ubicacion-actual-img, #destino-img {
+    width: 100%;
+    height: 300px; /* Ajusta según tus necesidades */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#resultado {
+    margin-top: 20px;
+}
+
+.conversion-table {
+    margin-top: 20px;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #fafafa;
+}
+
+.currency-selectors {
+    display: flex;
+    justify-content: space-between; /* Esto asegura que haya espacio entre los selectores */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    margin-top: 10px; /* Espacio adicional en la parte superior si es necesario */
+}
+
+
+
+select {
+    width: 100%; /* Hace que el selector ocupe todo el espacio disponible en su contenedor */
+    padding: 8px; /* Agrega algo de padding para mejorar la apariencia */
+}
+
+
+#destino-links {
+    display: none;  /* Oculta los enlaces inicialmente */
+    
+}
+
+#destino-links.visible {
+    display: flex; /* Muestra los enlaces cuando hay una selección válida */
+    font-size: 14px;
+    font-weight: 700;
+    
+}
+
+
+#destino-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+#destino-links li {
+    margin-top: 5px;
+}
+
+#destino-links a {
+    color: rgb(45, 165, 212);
+    text-decoration: underline;
+}
+
+.link-container {
+    display: flex;
+    justify-content: space-evenly; /* Distribuye el espacio uniformemente entre los enlaces */
+    align-items: center; /* Alinea verticalmente los iconos y el texto */
+    padding: 10px 0; /* Añade algo de padding arriba y abajo */
+}
+
+.link-container a {
+    color: #007bff; /* Color azul para los enlaces, ajustable según tu esquema de color */
+    text-decoration: none; /* Remueve el subrayado de los enlaces */
+    display: flex;
+    align-items: center; /* Alinea los iconos con el texto */
+}
+
+.link-container i {
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+

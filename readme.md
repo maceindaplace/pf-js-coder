@@ -6,8 +6,16 @@ Martin Andres d'Huicque
 ## Nombre del Proyecto:
 Conversor de Monedas
 
-## Fecha de la Primera Pre-Entrega:
-[22-02-204]
+## Fecha entrega
+[20-04-204]
+
+## Datos de Acceso 
+
+Nombre de usuario = admin
+Email = admin@conversor.com
+Clave = 1234
+
+
 
 ## Institución Educativa:
 Coderhouse
