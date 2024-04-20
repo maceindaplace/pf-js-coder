@@ -1,11 +1,11 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0 auto; /* Centra el contenedor en la pantalla */
-    padding-top: 80px; /* Ajusta según la altura de tu navbar */
+    margin: 0 auto; 
+    padding-top: 80px; 
     display: flex;
-    flex-direction: column; /* Asegura que el contenido se organice en columna */
-    justify-content: space-between; /* Distribuye el espacio desde arriba hasta abajo */
-    min-height: 100vh; /* Opcional: Hace que el body tenga al menos la altura de la pantalla */
+    flex-direction: column; 
+    justify-content: space-between; 
+    min-height: 100vh; 
 }
 
 
@@ -58,8 +58,6 @@ font-size: 14px;
 
 }
 
-
-
 #converter-container, #location-inputs {
     margin: 0 auto;
     width: 100%;
@@ -88,7 +86,7 @@ input, select, button {
 
 #ubicacion-actual-img, #destino-img {
     width: 100%;
-    height: 300px; /* Ajusta según tus necesidades */
+    height: 300px; 
     background-size: cover;
     background-position: center;
     margin-bottom: 20px;
@@ -124,26 +122,26 @@ th {
 
 .currency-selectors {
     display: flex;
-    justify-content: space-between; /* Esto asegura que haya espacio entre los selectores */
-    align-items: center; /* Alinea los elementos verticalmente en el centro */
-    margin-top: 10px; /* Espacio adicional en la parte superior si es necesario */
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 10px; 
 }
 
 
 
 select {
-    width: 100%; /* Hace que el selector ocupe todo el espacio disponible en su contenedor */
-    padding: 8px; /* Agrega algo de padding para mejorar la apariencia */
+    width: 100%; 
+    padding: 8px; 
 }
 
 
 #destino-links {
-    display: none;  /* Oculta los enlaces inicialmente */
+    display: none;  
     
 }
 
 #destino-links.visible {
-    display: flex; /* Muestra los enlaces cuando hay una selección válida */
+    display: flex; 
     font-size: 14px;
     font-weight: 700;
     
@@ -166,20 +164,20 @@ select {
 
 .link-container {
     display: flex;
-    justify-content: space-evenly; /* Distribuye el espacio uniformemente entre los enlaces */
-    align-items: center; /* Alinea verticalmente los iconos y el texto */
-    padding: 10px 0; /* Añade algo de padding arriba y abajo */
+    justify-content: space-evenly; 
+    align-items: center; 
+    padding: 10px 0;
 }
 
 .link-container a {
-    color: #007bff; /* Color azul para los enlaces, ajustable según tu esquema de color */
-    text-decoration: none; /* Remueve el subrayado de los enlaces */
+    color: #007bff;
+    text-decoration: none;
     display: flex;
-    align-items: center; /* Alinea los iconos con el texto */
+    align-items: center;
 }
 
 .link-container i {
-    margin-right: 5px; /* Espacio entre el icono y el texto */
+    margin-right: 5px; 
 }
 
 
