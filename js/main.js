@@ -1,4 +1,4 @@
-// Desarrollo JS para Proyecto Final JavaScritp 2024
+// Desarrollo JS para Proyecto Final JavaScript 2024
 // Autor: Martin Andres d'Huicque
 
 let userName = 'admin';
