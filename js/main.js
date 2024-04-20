@@ -2,14 +2,14 @@
 // Autor: Martin Andres d'Huicque
 
 let userName = 'admin';
-let userEmail = 'admin@conversor.com';
+let userEmail = 'admin@travelconversor.com';
 let userPassword = '1234';
 
 let userNameInput, emailInput, passwordInput;
 
 // Verificación del nombre de usuario
 for (let i = 0; i < 3; i++) {
-    userNameInput = prompt('Ingrese su Nombre de Usuario:').toLocaleLowerCase();
+    userNameInput = prompt('Ingrese su Nombre de Usuario - Datos de Acceso en ReadMe.md').toLocaleLowerCase();
     if (userNameInput === userName) {
         alert('Usuario correcto.');
         break;

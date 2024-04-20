@@ -12,7 +12,7 @@ Conversor de Monedas
 ## Datos de Acceso 
 
 Nombre de usuario = admin
-Email = admin@conversor.com
+Email = admin@travelconversor.com
 Clave = 1234
 
 
