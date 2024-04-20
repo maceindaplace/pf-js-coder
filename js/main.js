@@ -1,5 +1,5 @@
-// Desarrollo JS para Proyecto Final JavaScript 2024
-// Autor: Martin Andres d'Huicque
+// // Desarrollo JS para Proyecto Final JavaScript 2024
+// // Autor: Martin Andres d'Huicque
 
 let userName = 'admin';
 let userEmail = 'admin@travelconversor.com';
@@ -224,24 +224,26 @@ document.addEventListener('DOMContentLoaded', function() {
 // Permite que los enlaces de Alojamiento y Actividades se oculten si no hay destino seleccionado
 
 function updateVisibilidadLinks() {
-    const destino = document.getElementById('ubicacion-destino').value;
-    const destinoList = document.getElementById('paises');
-    const DestinoValido = destino && Array.from(destinationList.options).some(option => option.value === destino);
+    const destino = document.getElementById('ubicacion-destino').value.trim();
     const linksDestino = document.getElementById('destino-links');
+    const hospedajeLink = document.getElementById('hospedaje-link');
+    const actividadesLink = document.getElementById('actividades-link');
 
-//Creación de Enlaces Sencillos de Busqueda en Google segun la locación
-    if (DestinoValido) {
-        document.getElementById('hospedaje-link').href = `https://www.google.com/search?q=Alojamientos+en+${encodeURIComponent(destino)}`;
-        document.getElementById('actividades-link').href = `https://www.google.com/search?q=Qué+hacer+en+${encodeURIComponent(destino)}`;
-        document.getElementById('hospedaje-link').querySelector('span').textContent = `Alojamientos en ${destino}`;
-        document.getElementById('actividades-link').querySelector('span').textContent = `Qué hacer en ${destino}`;
+    if (destino) {
+        hospedajeLink.href = `https://www.google.com/search?q=Alojamientos+en+${encodeURIComponent(destino)}`;
+        actividadesLink.href = `https://www.google.com/search?q=Qué+hacer+en+${encodeURIComponent(destino)}`;
+        hospedajeLink.querySelector('span').textContent = `Alojamientos en ${destino}`;
+        actividadesLink.querySelector('span').textContent = `Qué hacer en ${destino}`;
         linksDestino.style.display = 'flex'; // Muestra los enlaces
     } else {
+        hospedajeLink.href = '#';
+        actividadesLink.href = '#';
+        hospedajeLink.querySelector('span').textContent = 'Alojamientos en [Destino]';
+        actividadesLink.querySelector('span').textContent = 'Qué hacer en [Destino]';
         linksDestino.style.display = 'none'; // Oculta los enlaces
     }
 }
 
-// Asignar correctamente los event listeners
 document.getElementById('ubicacion-destino').addEventListener('input', updateVisibilidadLinks);
 
 document.getElementById('borrar').addEventListener('click', function() {
@@ -254,18 +256,9 @@ document.getElementById('borrar').addEventListener('click', function() {
     document.getElementById('ubicacion-actual-img').style.backgroundImage = '';
     document.getElementById('destino-img').style.backgroundImage = '';
 
-    // Resetear enlaces y ocultar contenedor de enlaces
-    const hospedajeLink = document.getElementById('hospedaje-link');
-    const actividadesLink = document.getElementById('actividades-link');
-    const linksDestino = document.getElementById('destino-links');
-
-    hospedajeLink.href = '#';
-    actividadesLink.href = '#';
-
-    hospedajeLink.querySelector('span').textContent = 'Alojamientos en [Destino]';
-    actividadesLink.querySelector('span').textContent = 'Qué hacer en [Destino]';
-    linksDestino.style.display = 'none'; // Usa estilo directo para controlar la visibilidad
+    updateVisibilidadLinks();  // Asegúrate de llamar a esta función para reevaluar la visibilidad de los enlaces
 });
+
 
 
 // Función para cargar tabla con registro de las ultimas 10 conversiones realizadas por el usuario
